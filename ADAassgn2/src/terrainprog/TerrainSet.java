@@ -9,8 +9,12 @@ public class TerrainSet {
 	
 	int width = 10;
 	int height = 10;
+	
+	int scoreTotal;
+	
+	//DBconn dbConn;
 
-	public TerrainSet() {
+	public TerrainSet() throws Exception {
 		
 		/**
 		 * openTerData();
@@ -18,6 +22,7 @@ public class TerrainSet {
 		 * closeTerData();
 		 */
 		 createTer();
+		 //this.dbConn = new DBconn();
 		  
 	}
 
@@ -51,6 +56,14 @@ public class TerrainSet {
 	
 	public int getHeight() {
 		return height;
+	}
+	
+	public int getScore() {
+		return scoreTotal;
+	}
+	
+	public void setScore(int score) {
+		this.scoreTotal = score;
 	}
 	
 	
